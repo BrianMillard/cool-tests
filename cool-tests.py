@@ -218,29 +218,5 @@ if (response == '2'):
         if (keydown == "no"):
             print("mouse released")
 if (response == '3'):
-    app.stepsPerSecond = 100
-    spam = 0
-    eggs = Label('nothing here yet check again later', 200, 200, size=20,)
-    def onMousePress(mouseX, mouseY):
-        global spam
-        spam+=1
-    def onStep():
-        #print(spam)
-        #print(eggs.value)
-        if (spam==1):
-            eggs.value = 'i said nothing is here'
-        if (spam==2):
-            eggs.value = 'stop trying nothing is going to happen'
-        if (spam==3):
-            eggs.value = 'no'
-        if (spam==4):
-            eggs.value = 'NO'
-            eggs.fill = 'red'
-        if (spam==5):
-            eggs.value = 'STOP NOW'
-            eggs.size = 50
-        if (spam==6):
-            eggs.value = 'I WARNED YOU'
-        if (spam==7):
-            app.stop()
+  Label
 cmu_graphics.run()
